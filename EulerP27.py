@@ -1,10 +1,12 @@
-from EulerP7 import isPrime
+#!/usr/bin/env python
+
+from eulerfuncs import isPrime
 from itertools import count
 
 A_MAX, B_MAX = 1000, 1000
 
 def countPrimes(a, b):
-  for n in count(0): 
+  for n in count(0):
     if not isPrime(n**2 + a*n + b):
       return n
 
